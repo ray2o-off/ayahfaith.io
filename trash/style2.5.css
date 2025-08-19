@@ -1,0 +1,159 @@
+@font-face {
+    font-family: IP;
+    src: url(src/fonts/MYRIADPRO-SEMIBOLD.OTF);
+}
+@font-face {
+    font-family: RV;
+    src: url(src/fonts/RobotoCondensed-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: QFF;
+    src: url(src/fonts/Qlam_Quran.ttf);
+}
+
+
+body{margin: 0;}
+nav{
+    font-family: IP;
+    margin: auto;
+    margin-top: 10px;
+    background: linear-gradient(to right, #35B34A, #039445); 
+    border-radius: 100px;
+    height: 40px;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    ul,li{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+    }
+    img{
+        vertical-align: middle;
+        width: 20px; height: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.main{
+    text-align: center;
+    p{
+        margin-top: -85px;
+        font-family: RV;
+        font-weight: bold;
+        color: #35B34A;
+    }
+    .img-off{
+        display: flex;
+        justify-content: center;
+        margin-left: -20px;
+        img{width: 350px; height: 350px;}
+    }
+}
+
+.main2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;    
+
+    #Ayah{
+        margin-top: 20px;
+        margin-top: -72px;
+        text-align: center;
+        
+    }
+   
+} 
+.btnGen{
+    margin-left: 530px;
+    margin-top: -70px;}
+
+.ayahbtn {
+    width: 300px;
+    font-size: 15px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    font-family: IP;
+    /*background: #003f1c;*/
+    background: linear-gradient(90deg, #37cc35 0%, #2b5700 100%);
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+
+            .gradient {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border-radius: 0.6em;
+                margin-top: -0.25em;
+                background-image: linear-gradient(
+                    #039445
+                    #00c257
+                    #003f1c);   }
+
+            .label {
+            position: relative;
+            top: -1px;}
+
+            .transition {
+            transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            transition-duration: 500ms;
+            background-color: #37cc35;
+            border-radius: 9999px;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);}
+
+            button:hover .transition {
+            width: 300px;
+            height: 300px;}
+
+            button:active {
+            transform: scale(0.97);}
+
+    .infoicon{
+        width: 50px; height: 50px;
+        margin-left: 20px; bottom: 20px;
+        position: fixed;
+        cursor: pointer;
+
+    }
+
+    #sharebtn{
+        margin: 20px 0px 40px 128px;
+        background: none;
+        border: none;
+        width: 35px; height: 35px;
+        img{
+            width: 35px; height: 35px;
+        }
+    }
+
+
+@media (max-width:500px){
+
+    html, body {
+    width: 100%;
+    overflow-x: hidden;}
+
+    .btnGen{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        }
+    
+}
